@@ -18,7 +18,7 @@
                     <nav class="site-nav__nav">
                         <ul class="site-nav__list">
                             <li class="site-nav__item">
-                                <a class="site-nav__item-link" href="#">
+                                <a class="site-nav__item-link" href="index.html">
                                     Главная
                                 </a>
                             </li>
@@ -28,7 +28,7 @@
                                 </a>
                             </li>
                             <li class="site-nav__item">
-                                <a class="site-nav__item-link" href="form.html">
+                                <a class="site-nav__item-link" href="#">
                                     Подбор программы
                                 </a>
                             </li>
@@ -42,7 +42,8 @@
             <p class="form-page__description">Заполните анкету, и мы подберем
                 программу питания для вашего кота</p>
             <form class="form-page__form order-form" action="https://echo.htmlacademy.ru" method="post">
-                <div class="order-form__data">
+                <fieldset class="order-form__data">
+                  <h3 class="visually-hidden">Данные клиента</h3>
                   <label class="order-form__label">
                       Имя:*
                       <input class="order-form__input order-form__input--name" type="text" name="name-input" placeholder="Барсик">
@@ -55,7 +56,58 @@
                       Возраст (лет): 
                       <input class="order-form__input order-form__input--age" type="text" name="age-input" placeholder="7">
                   </label>
-                </div>
+                </fieldset>
+                <fieldset class="order-form__options">
+                    <h3 class="visually=hidden">Варианты целей</h3>
+                    <label class="order-form__label order-form__label-radio">
+                        <input class="order-form__radio" type="radio" name="options-radio" value="slim" checked>
+                        Похудение
+                    </label>
+                    <label class="order-form__label order-form__label-radio">
+                        <input class="order-form__radio" type="radio" name="options-radio"  value="mass">
+                        Набор массы
+                    </label>
+                    <label class="order-form__label order-form__label-radio">
+                        <input class="order-form__radio" type="radio" name="options-radio" value="doubts">
+                        Не знаю (нужен ваш совет)
+                    </label>
+                </fieldset>
+                <fieldset class="order-form__contacts">
+                   <h3 class="order-form__subtitle">Контактные данные (владельца кота)</h3>
+                   <label class="order-form__label">
+                       e-mail:*
+                       <input class="order-form__input order-form__input--email" type="email" name="input-email" placeholder="kuklachev@gmail.com">
+                   </label>
+                   <label class="order-form__label">
+                    телефон:*
+                    <input class="order-form__input order-form__input--tel" type="tel" name="input-tel" placeholder="8(960) 900-60-90">
+                </label>
+                </fieldset>
+                <fieldset class="order-form__comments">
+                    <h3 class="order-form__subtitle">Комментарий</h3>
+                    <textarea class="order-form__textarea" name="comments" rows="7" placeholder="Расскажите обо всех повадках кота" ></textarea>
+                </fieldset>
+                <fieldset class="order-form__others">
+                    <h3 class="order-form__subtitle">Дополнительно</h3>
+                    <label class="order-form__label order-form__label-checkbox">
+                        <input class="order-form__checkbox" type="checkbox" name="others-checkbox-first" checked>
+                        Сахарозаменитель
+                    </label>
+                    <label class="order-form__label order-form__label-checkbox">
+                        <input class="order-form__checkbox" type="checkbox" name="others-checkbox-second">
+                        Питьевая вода
+                    </label>
+                    <label class="order-form__label order-form__label-checkbox">
+                        <input class="order-form__checkbox" type="checkbox" name="others-checkbox-third">
+                        Молоко
+                    </label>
+                    <label class="order-form__label order-form__label-checkbox">
+                        <input class="order-form__checkbox" type="checkbox" name="others-checkbox-fourth">
+                        Витамины
+                    </label>
+                </fieldset>
+                <button class="order-form__button button" type="submit" >Отправить заявку</button>
+                <span>* - Обязательное поля</span>
             </form>
         </main>
         <footer class="main-footer">
