@@ -1,4 +1,41 @@
 body {
     margin: 0;
+
+    font-size: 14px;
+    line-height: 18px;
+    font-family: "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: $basic-black;
+    
 }
 
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.page {
+    height: 100%;
+}
+
+.page-body {
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
+
+    min-height: 100%;
+}
+
+.visually-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+
+    clip: rect(1px, 1px, 1px, 0);
+}

@@ -1,0 +1,41 @@
+.promo {
+    text-align: center;
+    color: $basic-white;
+
+    background-image: url("../img/index_background_desktop.png");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: 320px auto;
+}
+
+.promo__title {
+    margin: 0;
+    padding-top: 27px;
+
+    font-size: 36px;
+    line-height: 36px;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;  
+}
+
+.promo__description {
+    margin: 0;
+    margin-top: 25px;
+    font-size: 14px;
+    line-height: 14px;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;   
+    text-transform: uppercase;
+}
+
+.promo__picture {
+    margin-top: 29px;
+}
+
+.promo__button {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

@@ -1,18 +1,25 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html  class="page" lang="ru">
     <head>
         <meta charset="utf-8">
         <title>Магазин питания для кошек</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
     </head>
-    <body>
+    <body class="page-body">
         <header class="main-header">
-            <div class="container">
-                <div class="header__logo logo">
-                    <a href="#" class="logo__link" aria-label="Логотип компании">
-                       Картинка логотипа
-                    </a>
+          
+                <div class="main-header__logo logo">
+                    <div class="container">
+                        <a href="#" class="logo__link" aria-label="Логотип компании">
+                          <img class="logo__picture--first" src="img/logo_mobile.svg" width="34" height="38" alt="Логотип компании">
+                          <img class="logo__picture--second" src="img/logo_str.svg" width="101" height="18" alt="Название компании Cat Energy">
+                        </a>
+                    </div>
                 </div>
-                <div class="header__nav site-nav">
+                <div class="main-header__nav site-nav">
                     <button class="site-nav__button site-nav__button--opened" aria-label="Кнопка открытия навигации"></button>
                     <button class="site-nav__button site-nav__button--closed" aria-label="Кнопка закрытия навигации"></button>
                     <nav class="site-nav__nav">
@@ -34,20 +41,22 @@
                             </li>
                         </ul>
                     </nav>
-                </div>
-            </div>
+                </div>     
         </header>
         <main class="main-page">
            <h1 class="visually-hidden">Магазин функционального питания для котов</h1>
            <section class="promo">
-               <div class="container">
-                <h2 class="promo__title">Функциональное питание для котов</h2>
-                <p class="promo__description">Занялся собой? Займись котом!</p>
-                <div class="promo__picture">
-                  Контентная картинка
-                </div>
-                <a class="button promo__button" href="#" aria-label="Перейти на страницу подбора программы">Подобрать программу</a>
-               </div>      
+              
+                <div class="container">
+                    <h2 class="promo__title">Функциональное питание для котов</h2>
+                    <p class="promo__description">Занялся собой? Займись котом!</p>
+                    <div class="promo__picture">
+                      <img src="img/promo_img.png" width="280" height="270" alt="Катиртинка корма из курицы">
+                    </div>
+                    <a class="button promo__button" href="#" aria-label="Перейти на страницу подбора программы">Подобрать программу</a>
+                 </div> 
+               
+                    
            </section>
            <section class="food-options">
                <h2 class="visually-hidden">Варианты выбора питания</h2>
@@ -131,7 +140,9 @@
                     <p class="main-footer__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
                 </div>
                 <div class="main-footer__map">
-                    картинка
+                    <div class="main-footer__map-img">
+                        <img src="img/location.png" width="320" height="362" alt="Карта местности">
+                    </div>
                 </div>
             </div>
             <div class="logo main-footer__logo">
