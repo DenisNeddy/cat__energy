@@ -1,4 +1,11 @@
+.site-nav {
+    border-top: 1px solid $border-grey-e6;
+}
+
 .site-nav__button {
+    position: absolute;
+    top: -45px;
+    right: 0;
     width: 18px;
     height: 18px;
 
@@ -35,4 +42,8 @@
     text-transform: uppercase;
     vertical-align: middle;
     color: $basic-black;
+}
+
+.site-nav__button-wrapper {
+    position: relative;
 }
