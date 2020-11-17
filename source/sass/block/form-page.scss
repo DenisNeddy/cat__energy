@@ -1,0 +1,42 @@
+.form-page {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-page__title-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    
+    margin: 0;
+
+    align-self: center;
+  
+}
+
+.form-page__title {
+    margin: 0;
+    margin-top: 27px;
+
+    font-size: 36px;
+    line-height: 36px;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    
+}
+
+.form-page__description {
+
+    margin: 0;
+    margin-top: 37px;
+
+    width: 228px;
+    
+
+    font-size: 14px;
+    line-height: 18px;
+    
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    
+}

@@ -1,0 +1,13 @@
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding-top: 22px;
+    padding-bottom: 22px;
+}
+
+.copyright__link {
+    order: -1;
+    cursor: pointer;
+}

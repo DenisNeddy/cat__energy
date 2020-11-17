@@ -1,6 +1,9 @@
+
 .main-footer__adress-block {
     display: flex;
+    
 }
+
 .main-footer__contacts-title {
     font-size: 16px;
     line-height: 18px;
@@ -15,6 +18,20 @@
 }
 
 .main-footer__map {
-width: 320px;
-margin: 0 auto;
+   width: 320px;
+   margin: 0 auto;
 }
+
+
+.main-footer__wrapper-buttom {
+   padding-top: 39px;
+   background-color: $basic-grey;
+}
+
+
+.main-footer__logo {
+    display: flex;  
+    padding-bottom: 32px;
+}
+
+
