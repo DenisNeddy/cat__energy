@@ -1,6 +1,6 @@
 .order-form {
     margin-top: 20px;
-    background-color: tomato;
+    
 }
 
 .order-form__fieldset {
@@ -51,7 +51,7 @@
     text-transform: uppercase;
     color: $special-dark-grey-1;
 
-    border: 1px solid $special-dark-grey-1;
+    border: 1px solid $special-grey-2;
 
     box-sizing: border-box;
 
@@ -103,7 +103,6 @@
 
         background-color: $basic-green;
         border-radius: 50%;
-
     }
 }
 
@@ -121,22 +120,18 @@
 
     &::before {
         content: "";
-        
-        
+             
         display: block;
         height: 3px;
         width:120%;
         margin-left: 140px;
         margin-top: 10px;
        
-
-        background-color: $basic-green;
-       
+        background-color: $basic-green;     
     }
 }
 
 .order-form__subtitle {
-
     position: absolute;
     top: 0;
     left: 0;
@@ -167,9 +162,11 @@
     padding-top: 13px;
     padding-left: 15px;
 
+    box-sizing: border-box;
+   
+
     width: 100%;
     border: 1px solid $border-grey-e7;
-    ;
 
     font-size: 16px;
     line-height: 18px;
@@ -180,12 +177,81 @@
 
     &::placeholder {
         font-size: 16px;
-    line-height: 18px;
-    font-family: "Oswald", "Arial", sans-serif;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: $special-dark-grey-1;
+        line-height: 18px;
+        font-family: "Oswald", "Arial", sans-serif;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: $special-dark-grey-1;
     }
+}
+
+.order-form__fieldset--others .order-form__group {
+    margin-top: 10px;
+    margin-bottom: 13px;
+}
+
+
+.order-form__label--checkbox {
+    position: relative;
+
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 46px;
+
+    cursor: pointer;
+
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 30px;
+        height: 30px;
+
+        border: 1px solid $special-grey-2;
+    }
+
+    &::after {
+        content: "";
+        display: none;
+        position: absolute;
+        top: 9px;
+        left: 8px;
+    
+        width: 19px;
+        height: 15px;
+
+        background-image: url("../img/vector.svg");
+        background-repeat: no-repeat;
+    }
+}
+
+.order-form__checkbox:checked + .order-form__label--checkbox::after {
+    display: block;
+}
+
+.order-form__button-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 32px;
+    padding-bottom: 32px;
+}
+
+.order-form__button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.order-form__information {
+    margin-top: 21px;
+    align-self: center;
+}
+
+.main-footer--form  .main-footer__contacts {
+    background-color: $basic-grey;
 }
 
 

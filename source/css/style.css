@@ -139,6 +139,7 @@ img {
   color: #ffffff;
   text-align: center;
   background-color: #68B738;
+  border: none;
   cursor: pointer; }
 
 .food-options__list {
@@ -395,8 +396,7 @@ img {
   text-transform: uppercase; }
 
 .order-form {
-  margin-top: 20px;
-  background-color: tomato; }
+  margin-top: 20px; }
 
 .order-form__fieldset {
   margin: 0;
@@ -432,7 +432,7 @@ img {
   font-weight: 400;
   text-transform: uppercase;
   color: #444444;
-  border: 1px solid #444444;
+  border: 1px solid #cdcdcd;
   box-sizing: border-box; }
   .order-form__input::-moz-placeholder {
     font-size: 16px;
@@ -531,6 +531,7 @@ img {
   margin-top: 12px;
   padding-top: 13px;
   padding-left: 15px;
+  box-sizing: border-box;
   width: 100%;
   border: 1px solid #e7e7e7;
   font-size: 16px;
@@ -560,5 +561,55 @@ img {
     font-weight: 400;
     text-transform: uppercase;
     color: #444444; }
+
+.order-form__fieldset--others .order-form__group {
+  margin-top: 10px;
+  margin-bottom: 13px; }
+
+.order-form__label--checkbox {
+  position: relative;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 46px;
+  cursor: pointer; }
+  .order-form__label--checkbox::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #cdcdcd; }
+  .order-form__label--checkbox::after {
+    content: "";
+    display: none;
+    position: absolute;
+    top: 9px;
+    left: 8px;
+    width: 19px;
+    height: 15px;
+    background-image: url("../img/vector.svg");
+    background-repeat: no-repeat; }
+
+.order-form__checkbox:checked + .order-form__label--checkbox::after {
+  display: block; }
+
+.order-form__button-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+  padding-bottom: 32px; }
+
+.order-form__button {
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+.order-form__information {
+  margin-top: 21px;
+  align-self: center; }
+
+.main-footer--form .main-footer__contacts {
+  background-color: #f2f2f2; }
 
 /*# sourceMappingURL=style.css.map */

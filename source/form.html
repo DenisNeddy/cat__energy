@@ -154,30 +154,32 @@
                     </div>
                     <div class="container">
                         <div class="order-form__group">
-                            <input class="order-form__checkbox" type="checkbox" name="others-checkbox-first" id="id-others-first" checked>
-                            <label class="order-form__label order-form__label-checkbox" for="id-others-first">Сахарозаменитель</label> 
+                            <input class="order-form__checkbox visually-hidden" type="checkbox" name="others-checkbox-first" id="id-others-first" checked>
+                            <label class="order-form__label order-form__label--checkbox" for="id-others-first">Сахарозаменитель</label> 
                         </div>
                         <div class="order-form__group"> 
-                            <input class="order-form__checkbox" type="checkbox" name="others-checkbox-second" id="id-others-second">
-                            <label class="order-form__label order-form__label-checkbox" for="id-others-second">Питьевая вода</label>
+                            <input class="order-form__checkbox visually-hidden" type="checkbox" name="others-checkbox-second" id="id-others-second">
+                            <label class="order-form__label order-form__label--checkbox" for="id-others-second">Питьевая вода</label>
                         </div>
                         <div class="order-form__group">
-                            <input class="order-form__checkbox" type="checkbox" name="others-checkbox-third" id="id-others-third">
-                            <label class="order-form__label order-form__label-checkbox" for="id-others-third">Молоко</label>
+                            <input class="order-form__checkbox visually-hidden" type="checkbox" name="others-checkbox-third" id="id-others-third">
+                            <label class="order-form__label order-form__label--checkbox" for="id-others-third">Молоко</label>
                         </div>
                         <div class="order-form__group">             
-                            <input class="order-form__checkbox" type="checkbox" name="others-checkbox-fourth" id="id-others-fourth">
-                            <label class="order-form__label order-form__label-checkbox" for="id-others-fourth"> Витамины</label> 
+                            <input class="order-form__checkbox visually-hidden" type="checkbox" name="others-checkbox-fourth" id="id-others-fourth">
+                            <label class="order-form__label order-form__label--checkbox" for="id-others-fourth"> Витамины</label> 
                         </div>
-     
-                    </div>
-                   
+                    </div>                
                 </fieldset>
-                <button class="order-form__button button" type="submit" >Отправить заявку</button>
-                <span>* - Обязательное поля</span>
+                <div class="container">
+                    <div class="order-form__button-wrapper">
+                        <button class="order-form__button button" type="submit" >Отправить заявку</button>
+                        <span class="order-form__information">* - Обязательное поля</span>
+                    </div>      
+                </div>      
             </form>
         </main>
-        <footer class="main-footer">          
+        <footer class="main-footer main-footer--form">          
             <div class="main-footer__contacts">
                 <div class="container">
                     <div class="main-footer__adress-block">
