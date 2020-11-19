@@ -91,72 +91,87 @@
                     <div class="container">
                         <h3 class="visually-hidden">Данные клиента</h3>
                         <p class="order-form__group">
-                            <label class="order-form__label order-form__label--input">Имя:*</label>   
-                            <input class="order-form__input order-form__input--name" type="text" name="name-input" placeholder="Барсик">
-                            
+                            <label class="order-form__label order-form__label--input" for="id-data-first">Имя:*</label>   
+                            <input class="order-form__input order-form__input--name" type="text" name="name-input" id="id-data-first" placeholder="Барсик">
                         </p>
                         <p class="order-form__group">
-                            <label class="order-form__label order-form__label--input">
-                                Вес (кг):*
-                            </label>
-                                <input class="order-form__input order-form__input--weight" type="text" name="weight-input" placeholder="7">
-                            
+                            <label class="order-form__label order-form__label--input" for="id-data-second">Вес (кг):*</label>
+                            <input class="order-form__input order-form__input--weight" type="text" name="weight-input" id="id-data-second" placeholder="7">                         
                         </p>
                         <p class="order-form__group">
-                            <label class="order-form__label order-form__label--input">Возраст (лет):</label>  
-                                <input class="order-form__input order-form__input--age" type="text" name="age-input" placeholder="7">
-                            
+                            <label class="order-form__label order-form__label--input" for="id-data-third">Возраст (лет):</label>  
+                            <input class="order-form__input order-form__input--age" type="text" name="age-input" id="id-data-third" placeholder="7">
                         </p>
                     </div>
                 </fieldset>
                 <fieldset class="order-form__fieldset order-form__fieldset--options">
-                    <h3 class="visually=hidden">Варианты целей</h3>
-                    <label class="order-form__label order-form__label-radio">
-                        <input class="order-form__radio" type="radio" name="options-radio" value="slim" checked>
-                        Похудение
-                    </label>
-                    <label class="order-form__label order-form__label-radio">
-                        <input class="order-form__radio" type="radio" name="options-radio"  value="mass">
-                        Набор массы
-                    </label>
-                    <label class="order-form__label order-form__label-radio">
-                        <input class="order-form__radio" type="radio" name="options-radio" value="doubts">
-                        Не знаю (нужен ваш совет)
-                    </label>
+                    <div class="container">
+                        <h3 class="visually-hidden">Варианты целей</h3>
+                        <div class="order-form__radio-wrapper">
+                            <div class="order-form__group">
+                                <input class="order-form__radio visually-hidden" type="radio" name="options-radio" id="id-options-first" value="slim" checked>
+                                <label class="order-form__label order-form__label--radio" for="id-options-first">Похудение</label>
+                            </div>
+                            <div class="order-form__group">
+                                <input class="order-form__radio visually-hidden" type="radio" name="options-radio" id="id-options-second" value="mass">
+                                <label class="order-form__label order-form__label--radio" for="id-options-second">Набор массы</label>
+                            </div>
+                            <div class="order-form__group">
+                                <input class="order-form__radio visually-hidden" type="radio" name="options-radio" id="id-options-third" value="doubts">
+                                <label class="order-form__label order-form__label--radio" for="id-options-third"> Не знаю (нужен ваш совет)</label>
+                            </div>
+                        </div>
+                        
+                    </div> 
                 </fieldset>
                 <fieldset class="order-form__fieldset order-form__fieldset--contacts">
-                   <h3 class="order-form__subtitle">Контактные данные (владельца кота)</h3>
-                   <label class="order-form__label order-form__label--input">
-                       e-mail:*
-                       <input class="order-form__input order-form__input--email" type="email" name="input-email" placeholder="kuklachev@gmail.com">
-                   </label>
-                   <label class="order-form__label order-form__label--input">
-                    телефон:*
-                    <input class="order-form__input order-form__input--tel" type="tel" name="input-tel" placeholder="8(960) 900-60-90">
-                </label>
+                    <div class="order-form__subtitle-wrapper">
+                       <h3 class="order-form__subtitle">Контактные данные (владельца кота)</h3>
+                    </div>
+                    <div class="container order-form__contacts-wrapper">
+                        <p class="order-form__group">
+                           <label class="order-form__label order-form__label--input" for="id-contacts-first">e-mail:*</label>
+                           <input class="order-form__input order-form__input--email" type="email" name="input-email" id="id-contacts-first" placeholder="kuklachev@gmail.com">
+                        </p>
+                        <p class="order-form__group">
+                            <label class="order-form__label order-form__label--input" for="id-contacts-second">телефон:*</label>
+                            <input class="order-form__input order-form__input--tel" type="tel" name="input-tel" id="id-contacts-second" placeholder="8(960) 900-60-90">
+                        </p>   
+                    </div>
                 </fieldset>
                 <fieldset class="order-form__fieldset order-form__fieldset--comments">
-                    <h3 class="order-form__subtitle">Комментарий</h3>
-                    <textarea class="order-form__textarea" name="comments" rows="7" placeholder="Расскажите обо всех повадках кота" ></textarea>
+                    <div class="order-form__subtitle-wrapper order-form__subtitle-wrapper--textarea">
+                        <h3 class="order-form__subtitle order-form__subtitle--textarea">Комментарий</h3>
+                    </div>
+                    <div class="container">
+                        <textarea class="order-form__textarea" name="comments" rows="7" placeholder="Расскажите обо всех повадках кота" ></textarea>
+                    </div>
+                    
                 </fieldset>
                 <fieldset class="order-form__fieldset order-form__fieldset--others">
-                    <h3 class="order-form__subtitle">Дополнительно</h3>
-                    <label class="order-form__label order-form__label-checkbox">
-                        <input class="order-form__checkbox" type="checkbox" name="others-checkbox-first" checked>
-                        Сахарозаменитель
-                    </label>
-                    <label class="order-form__label order-form__label-checkbox">
-                        <input class="order-form__checkbox" type="checkbox" name="others-checkbox-second">
-                        Питьевая вода
-                    </label>
-                    <label class="order-form__label order-form__label-checkbox">
-                        <input class="order-form__checkbox" type="checkbox" name="others-checkbox-third">
-                        Молоко
-                    </label>
-                    <label class="order-form__label order-form__label-checkbox">
-                        <input class="order-form__checkbox" type="checkbox" name="others-checkbox-fourth">
-                        Витамины
-                    </label>
+                    <div class="order-form__subtitle-wrapper order-form__subtitle-wrapper--others">
+                        <h3 class="order-form__subtitle">Дополнительно</h3>
+                    </div>
+                    <div class="container">
+                        <div class="order-form__group">
+                            <input class="order-form__checkbox" type="checkbox" name="others-checkbox-first" id="id-others-first" checked>
+                            <label class="order-form__label order-form__label-checkbox" for="id-others-first">Сахарозаменитель</label> 
+                        </div>
+                        <div class="order-form__group"> 
+                            <input class="order-form__checkbox" type="checkbox" name="others-checkbox-second" id="id-others-second">
+                            <label class="order-form__label order-form__label-checkbox" for="id-others-second">Питьевая вода</label>
+                        </div>
+                        <div class="order-form__group">
+                            <input class="order-form__checkbox" type="checkbox" name="others-checkbox-third" id="id-others-third">
+                            <label class="order-form__label order-form__label-checkbox" for="id-others-third">Молоко</label>
+                        </div>
+                        <div class="order-form__group">             
+                            <input class="order-form__checkbox" type="checkbox" name="others-checkbox-fourth" id="id-others-fourth">
+                            <label class="order-form__label order-form__label-checkbox" for="id-others-fourth"> Витамины</label> 
+                        </div>
+     
+                    </div>
+                   
                 </fieldset>
                 <button class="order-form__button button" type="submit" >Отправить заявку</button>
                 <span>* - Обязательное поля</span>
