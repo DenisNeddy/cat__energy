@@ -1,0 +1,24 @@
+.additional-goods__title-wrapper {
+    position: relative;   
+
+    margin: 0 auto;
+    margin-top: 26px;
+    padding-top: 1px;
+
+    width: 280px;
+    min-height: 52px;      
+
+    &::before {
+        content: "";
+             
+        display: block;
+
+        margin-left: 140px;
+        margin-top: 10px;
+
+        height: 3px;
+        width:120%;
+        
+        background-color: $basic-green;     
+    }
+}

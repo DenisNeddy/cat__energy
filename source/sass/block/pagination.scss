@@ -1,0 +1,50 @@
+.pagination {
+    padding-bottom: 20px;
+
+    text-align: center;    
+}
+
+.pagination__title {
+    margin: 0;
+    padding-top: 79px;
+
+    font-size: 16px;
+    line-height: 20px;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $basic-black;
+}
+
+.pagination__description {
+    margin: 0;
+    margin-top: 10px;
+
+    font-size: 12px;
+    line-height: 16px;
+    color: $special-dark-grey-1;
+}
+
+.pagination__button {
+    display: block;
+    
+    margin-top: 21px;
+  
+    padding-top: 10px;
+    
+    padding-bottom: 10px;
+
+    font-size: 16px;
+    line-height: 18px;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400px;
+    text-transform: uppercase;
+    color: $special-dark-grey-1;
+    
+    background-color: $basic-grey;
+
+    vertical-align: middle;
+
+    cursor: pointer;
+
+}
