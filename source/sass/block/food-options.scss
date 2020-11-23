@@ -1,20 +1,27 @@
 .food-options__list {
     margin: 0;
     padding: 0;
+
     list-style: none;
 }
 
 .food-options__item {
-    background-color: $basic-grey;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 18px;
+
+    background-color: $basic-grey;
+
+    @media (min-width: $tablet-width) {
+        padding-left: 53px;
+        padding-right: 0;
+        padding-bottom: 53px; 
+    }
 }
 
 .food-options__title {
     padding-top: 30px;
 
-    
     font-size: 24px;
     line-height: 37px;
     font-family: "Oswald", "Arial", sans-serif;
@@ -22,18 +29,49 @@
     text-align: center;
     text-transform: uppercase;
     color: $basic-black;
+
+    @media (min-width: $tablet-width) {
+        max-width: 380px;
+        text-align: left;
+
+        background-color: tomato;
+    }
 }
 
 .food-options__description {
     margin-top: 30px;
     padding-bottom: 23px;
+
     border-bottom: 1px solid $border-grey-d9; 
+
+    @media (min-width: $tablet-width) {
+        max-width: 380px;
+
+        font-size: 16px;
+        line-height: 24px;
+
+        text-align: left;
+
+        border-bottom: none;
+        background-color: tomato;
+    }
 }
 
 .food-options__button {
+    display: inline-block;
+
     font-size: 16px;
     line-height: 16px;
     font-family: "Oswald", "Arial", sans-serif;
     text-transform: uppercase;
+    vertical-align: center;
     color: $basic-black;
+
+    @media (min-width: $tablet-width) {
+        margin-top: 29px;
+        
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 400;
+    }
 }

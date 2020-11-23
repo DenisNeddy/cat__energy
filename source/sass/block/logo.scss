@@ -1,13 +1,42 @@
 .logo {
     padding-top: 12px;
     padding-bottom: 16px;
+
+    @media (min-width: $tablet-width) {
+       padding-top: 0;
+       padding-bottom: 0;
+       margin-top: 0;
+      
+    }
 }
+
+.logo__wrapper {
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 280px; 
+
+    @media (min-width: $tablet-width) {
+        width: auto;
+        margin: 0 ;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
 .logo__link {
     display: flex;
     justify-content: space-between;
     align-items: center;
     
     padding-right: 30px;
+
+    @media (min-width: $tablet-width) {
+        display: flex;
+        justify-content: flex-start;
+
+        padding-right: 0;
+     }
     
 }
 
@@ -16,12 +45,32 @@
     margin-right: auto;
     margin-left: auto;
     padding-left: 20px;
-  
+}
+
+.logo__picture--first {
+    @media (min-width: $tablet-width) {
+        display: none;
+     }
+}
+
+.logo__picture--first-tablet {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+        display: block;
+        margin-right: 12px;
+     }
 }
 
 .logo__picture--second {
    margin-right: auto;
    margin-left: auto;
+
+   @media (min-width: $tablet-width) {
+    margin-right: 0;
+    margin-left: 0;
+   
+ }
    
 }
 

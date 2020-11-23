@@ -3,6 +3,10 @@
     padding-bottom: 27px;
     
     background-color: $special-grey-bg;
+
+    @media (min-width: $tablet-width) {
+        background-image: linear-gradient($basic-white 65%, $special-grey-bg 65%,$special-grey-bg 100%)
+    }
 }
 
 .example__title {
@@ -13,10 +17,31 @@
    font-family: "Oswald", "Arial", sans-serif;
    font-weight: 400;
    color: $basic-black;
+
+   @media (min-width: $tablet-width) {
+      margin-top: 16px;
+      font-size: 60px;
+      line-height: 60px;
+      font-weight: 400;
+   }
 }
 
 .example__description {
-    margin-top: 33px;   
+    margin-top: 33px;  
+    
+    @media (min-width: $tablet-width) {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+     }
+}
+
+.example__data {
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-wrap: wrap;
+      padding-top: 38px;
+    }
 }
 
 .example__list {
@@ -26,6 +51,11 @@
     margin-bottom: 36px;
     padding: 0;
     list-style: none;
+
+    @media (min-width: $tablet-width) {
+        width: 370px;
+        margin-bottom: 0;
+    }
 }
 
 .example__item {
@@ -35,8 +65,14 @@
     text-align: center;
     border: 1px solid $special-grey-2;
     border-radius: 5%;
+
     &:last-child {
         margin-left: auto;
+    }
+
+    @media (min-width: $tablet-width) {
+        width: 162px;
+        min-height: 77px;
     }
 }
 
@@ -50,6 +86,14 @@
     font-weight: 400;
     text-transform: uppercase;
     color:$basic-black;
+
+    @media (min-width: $tablet-width) {
+        margin-top: 15px;
+
+        font-size: 30px;
+        line-height: 37px;
+        font-weight: 400;  
+    }
 }
 
 .example__subdescription {
@@ -62,6 +106,18 @@
    text-align: center;
     width: 78px;
     background-color: $special-grey-bg;
+
+    @media (min-width: $tablet-width) {
+        display: block;
+        white-space: nowrap;
+        top: 70%;
+        left: 50%;
+        width: auto;
+        padding: 0 10px;
+        text-align: none;
+        background-color: $basic-white; 
+        transform: translate(-50%, 70%);
+    }
 }
 
 .example__picture-wrapper {
@@ -77,6 +133,25 @@
     text-align: center;
     text-transform: uppercase;
     color: $basic-black;
+
+    @media (min-width: $tablet-width) {
+       margin: 0;
+       margin-top: auto;
+       margin-bottom: auto;
+       margin-left: auto;
+       text-align: right;
+       background-color: plum;
+       font-size: 20px;
+       line-height: 24px;
+       font-weight: 400;
+       max-width: 176px;
+      }
+}
+
+.example__result-toggle {
+    @media (min-width: $tablet-width) {
+        width: 100%;
+      }
 }
 
 .example__toggle {
