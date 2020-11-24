@@ -1,6 +1,9 @@
 
 .main-footer__adress-block {
     display: flex;
+    padding-top: 16px;
+    padding-bottom: 10px;
+
     
 }
 
@@ -24,13 +27,15 @@
 
 
 .main-footer__wrapper-buttom {
-   padding-top: 39px;
+   padding-top: 23px;
    background-color: $basic-grey;
 }
 
 
 .main-footer__logo {
     display: flex;  
+    align-items: center;
+    margin-left: 10px;
     padding-bottom: 32px;
 }
 

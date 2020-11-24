@@ -1,5 +1,6 @@
 .how-it-works {
     margin-top: 27px;
+    padding-bottom: 20px;
 
     @media (min-width: $tablet-width) {
         border-bottom: 1px solid $border-grey-e6;
@@ -7,6 +8,7 @@
 }
 
 .how-it-works__title {
+    margin-bottom: 37px;
     font-size: 36px;
     line-height: 40px;
     font-family: "Oswald", "Arial", sans-serif;
@@ -46,7 +48,9 @@
 
 .how-it-works__description {
     display: flex;
-   
+    padding: 0;
+    margin: 0;
+    background-color: red;
    
     &::before {
         content: "";
