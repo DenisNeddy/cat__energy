@@ -7,10 +7,14 @@
     
     
     @media (min-width: $tablet-width) {
-        width: 708px;
+        width: 768px;
         margin: 0 auto;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+        box-sizing: border-box;
+
+        background-color: rgba(221, 160, 221, 0.6);
+        
     }
 }
 

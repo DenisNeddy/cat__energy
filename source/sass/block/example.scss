@@ -38,9 +38,11 @@
     
     
     @media (min-width: $tablet-width) {
+        width: auto;
         font-size: 16px;
         line-height: 24px;
         font-weight: 400;
+
      }
 }
 
@@ -121,6 +123,8 @@
 
     @media (min-width: $tablet-width) {
         display: block;
+        font-size: 14px;
+        line-height: 14px;
         white-space: nowrap;
         top: 70%;
         left: 50%;
@@ -157,7 +161,7 @@
        margin-bottom: auto;
        margin-left: auto;
        text-align: right;
-       background-color: plum;
+   
        font-size: 20px;
        line-height: 24px;
        font-weight: 400;
@@ -191,6 +195,11 @@
     font-weight: 400;
     text-transform: uppercase;
     color: $basic-black; 
+
+    @media (min-width: $tablet-width) {
+        font-size: 20px;
+        line-height: 30px;
+    }
 }
 
 .example__bar {
@@ -205,6 +214,13 @@
     background-color: $basic-white;
     border: 1px solid $special-grey-2;
     border-radius: 20px;
+
+    @media (min-width: $tablet-width) {
+        height: 6px;
+        width: 100%;
+        max-width: 428px;
+        background-color:  $special-grey-2; 
+    }
 }
 
 
@@ -215,4 +231,14 @@
     background-color: $basic-green;
     border-radius: 20px;
     cursor: pointer;
+
+    @media (min-width: $tablet-width) {
+        margin-left: auto;
+        margin-right: auto;
+        width: 8px;
+        height: 8px;
+        border: 14px solid $basic-white;
+        border-radius: 50%;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16);
+    }
 }

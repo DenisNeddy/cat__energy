@@ -4,13 +4,10 @@
 }
 
 .form-page__title-wrapper {
+    
     margin-left: auto;
-    margin-right: auto;
     
     margin: 0;
-
-    align-self: center;
-  
 }
 
 .form-page__title {
@@ -21,6 +18,13 @@
     line-height: 36px;
     font-family: "Oswald", "Arial", sans-serif;
     font-weight: 400;
+    text-align: left;
+
+    @media (min-width: $tablet-width) {
+        margin-top: 60px;
+        font-size: 60px;
+        line-height: 60px;
+    }
     
 }
 
@@ -29,7 +33,7 @@
     margin: 0;
     margin-top: 37px;
 
-    width: 228px;
+    max-width: 228px;
     
 
     font-size: 14px;
@@ -38,5 +42,15 @@
     font-family: "Oswald", "Arial", sans-serif;
     font-weight: 400;
     text-transform: uppercase;
+
+    
+    @media (min-width: $tablet-width) {
+        margin-top: 53px;
+        margin-left: 40px;
+        max-width: 326px;;
+        font-size: 20px;
+        line-height: 30px;
+       
+    }
     
 }

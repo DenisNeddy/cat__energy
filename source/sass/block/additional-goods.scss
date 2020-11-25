@@ -6,7 +6,7 @@
     padding-top: 1px;
 
     width: 280px;
-    min-height: 52px;      
+    min-height: 52px;   
 
     &::before {
         content: "";
@@ -14,11 +14,42 @@
         display: block;
 
         margin-left: 140px;
-        margin-top: 10px;
+        margin-top: 15px;
 
         height: 3px;
         width:120%;
         
         background-color: $basic-green;     
     }
+}
+
+.additional-goods__title {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    margin: 0;
+    padding-left: 0;
+    padding-right: 20px;
+
+    max-width: 227px;
+    
+    font-size: 24px;
+    line-height: 26px;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    color: $basic-black;
+
+    background-color: $basic-white;  
+}
+
+.additional-goods__list {
+    margin: 0;
+    margin-top: 9px;
+    padding: 0;
+    list-style: none;
+}
+
+.additional-goods__item {
+    margin-bottom: 10px;
 }
