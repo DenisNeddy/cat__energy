@@ -49,6 +49,12 @@
     margin-right: auto;
     margin-left: auto;
     padding-left: 20px;
+
+    @media (min-width: $tablet-width) {
+        padding-left: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
 
 .logo__picture--first {
