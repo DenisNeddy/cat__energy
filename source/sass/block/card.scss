@@ -2,8 +2,22 @@
     display: flex;
     flex-wrap: wrap;
 
-    padding-top: 11px;
-    padding-bottom: 14px;   
+    padding-top: 10px;
+    padding-bottom: 14px;
+    margin-bottom: 10px;   
+    min-width: 190px;
+
+    @media (min-width: $tablet-width) {
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        min-width: auto;
+        width: 324px;
+        //временно
+        min-height: 511px;
+
+        border: 2px solid black;
+    }
 }
 
 .card__title {
@@ -31,14 +45,38 @@
 
 .card__picture {
     margin: 0;
+    margin-top: 10px;
     padding: 0; 
+    text-align: center;
+    width: 140px;
 
-    min-width: 142px;
-    max-height: 112px;  
+
+    @media (min-width: $tablet-width) {
+        margin-top: 10px;
+        min-width: auto;
+        width: 324px;
+        text-align: center;
+    }
+}
+
+.card__image {
+    @media (min-width: $tablet-width) {
+        margin-top: 30px;
+        &--500gramm {
+            margin-top: 70px;
+            width: 128px;
+        }
+        &--1000gramm {
+            margin-top: 40px;
+            width: 168px;
+        }
+     }
 }
 
 .card__data-wrapper {
+    margin-top: 12px;
     width: calc(100% - 142px);
+
 }
 
 .card__property-list {    
@@ -61,8 +99,8 @@
 }
 
 .card__button {
-    margin-top: 24px;
-    padding-top: 10px;
+    margin-top: 9px;
+    padding-top: 9px;
     padding-bottom: 10px;
 
     width: 100%;

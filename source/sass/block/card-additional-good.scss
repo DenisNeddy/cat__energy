@@ -1,0 +1,40 @@
+.card-additional-good {
+    padding-top: 13px;
+    padding-bottom: 9px;
+
+    border-top: 1px solid $special-grey-2;
+}
+.card-additional-good__title {
+    margin: 0;
+    font-size: 16px;
+    line-height: 18px;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    color: $special-dark-grey-2;
+}
+
+.card-additional-good__data-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 11px;
+    
+
+}
+
+.card-additional-good__description {
+    margin: 0;   
+}
+
+.card-additional-good__price {
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.card-additional-good__button {
+    display: block;
+    margin-top: 13px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}

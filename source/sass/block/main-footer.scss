@@ -1,7 +1,27 @@
-
+.main-footer {
+    @media (min-width: $tablet-width) {
+        padding-bottom: 58px;
+    }
+}
 .main-footer__adress-block {
     display: flex;
+    padding-top: 16px;
+    padding-bottom: 10px;
+
     
+    @media (min-width: $tablet-width) {
+        justify-content: space-between;
+        padding-top: 46px;
+        
+    }
+
+    
+}
+.main-footer__adress-block {
+    @media (min-width: $tablet-width) {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
 }
 
 .main-footer__contacts-title {
@@ -11,27 +31,86 @@
     text-transform: uppercase;
     color: $basic-black;
     width: 50%;
+
+    @media (min-width: $tablet-width) {
+        font-size: 20px;
+        line-height: 24px;
+
+        max-width: 170px;
+    }
 }
 
 .main-footer__adress {
     width: 50%;
+
+    @media (min-width: $tablet-width) {
+       
+        max-width: 159px;
+       
+        font-size: 16px;
+        line-height: 20px;
+
+        text-align: right;
+    }
+}
+
+.main-footer__adress span {
+    display: inline-block;
+    margin-top: 22px;
+    vertical-align: middle;
 }
 
 .main-footer__map {
    width: 320px;
    margin: 0 auto;
+
+   @media (min-width: $tablet-width) {
+       margin: 0;
+       width: 100%;
+   }
+}
+
+.main-footer__map-img img {
+    
+    @media (min-width: $tablet-width) {
+        margin-top: 32px;
+        width: 100%;
+        max-height: 400px;
+    }
 }
 
 
-.main-footer__wrapper-buttom {
-   padding-top: 39px;
+.main-footer__wrapper {
+   padding-top: 23px;
    background-color: $basic-grey;
 }
 
+.main-footer__wrapper-bottom {
+    @media (min-width: $tablet-width) {
+        display: flex;
+        justify-content: space-between;
+    }
+   
+}
 
 .main-footer__logo {
     display: flex;  
+    align-items: center;
+    margin-left: 10px;
     padding-bottom: 32px;
+
+    @media (min-width: $tablet-width) {
+        justify-content: start;
+        width: 180px;
+        margin-top: 32px;
+        margin-left: 0;  
+    }
 }
 
+.main-footer--form {
+    @media (min-width: $tablet-width) {
+        margin-top: 41px;
 
+        
+    }
+}

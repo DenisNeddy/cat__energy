@@ -1,3 +1,34 @@
+.main-header {
+    
+    @media (min-width: $tablet-width) {
+        min-height: 82px;
+
+        border-bottom: none;
+
+    }
+}
+
+.main-header__wrapper {
+    @media (min-width: $tablet-width) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 768px;
+        margin: 0 auto;
+        margin-top: 13px;
+        padding-left: 30px;
+        padding-right: 30px;
+        box-sizing: border-box;
+        min-height: 100%;
+    }
+}
+
 .main-header_logo {
     border-bottom: 1px solid $border-grey-e6;
+
+    @media (min-width: $tablet-width) {
+        
+        border-bottom: none;
+    }
 }
