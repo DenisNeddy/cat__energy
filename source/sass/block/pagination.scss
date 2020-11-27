@@ -2,6 +2,17 @@
     padding-bottom: 25px;
 
     text-align: center;    
+
+    @media (min-width: $tablet-width) {
+        display: flex;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        min-width: auto;
+        width: 324px;
+
+        border: 2px solid black;
+   }
 }
 
 .pagination__title {
