@@ -55,9 +55,13 @@
 }
 
 .main-footer__adress span {
-    display: inline-block;
-    margin-top: 22px;
-    vertical-align: middle;
+   
+
+    @media (min-width: $tablet-width) {
+        display: inline-block;
+        margin-top: 22px;
+        vertical-align: middle;
+    }
 }
 
 .main-footer__map {

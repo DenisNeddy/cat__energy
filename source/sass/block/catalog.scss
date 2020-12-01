@@ -7,6 +7,7 @@
 
     
     @media (min-width: $tablet-width) {
+        padding-top: 12px;
         display: flex;
         flex-wrap: wrap;
         max-width: 768px;
@@ -16,6 +17,7 @@
 
 .catalog__item:nth-child(n+2) {
     position: relative;
+
 
     &::after {
         content: "";
@@ -40,15 +42,17 @@
 .catalog__item {
     
     @media (min-width: $tablet-width) {
+        margin-bottom: 23px;
       
       max-width: 324px;
-      background-image: linear-gradient(tomato 25%, red 25%);
+      background-image: linear-gradient($basic-white 22%, #f2f2f2 22%);
       &:nth-child(even) {
           margin-left: 60px;
       }
 
     }
 }
+
 
 .catalog__gift {
     margin-top: 50px;
