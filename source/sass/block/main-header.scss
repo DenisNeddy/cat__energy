@@ -1,10 +1,8 @@
 .main-header {
-    
     @media (min-width: $tablet-width) {
         min-height: 82px;
 
         border-bottom: none;
-
     }
 }
 
@@ -22,13 +20,23 @@
         box-sizing: border-box;
         min-height: 100%;
     }
+
+    @media (min-width: $desktop-width) {
+        position: relative;
+        margin-top: 0;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 54px;
+        width: 1220px;
+        
+        z-index: 10;
+    }
 }
 
 .main-header_logo {
     border-bottom: 1px solid $border-grey-e6;
 
-    @media (min-width: $tablet-width) {
-        
+    @media (min-width: $tablet-width) {  
         border-bottom: none;
     }
 }

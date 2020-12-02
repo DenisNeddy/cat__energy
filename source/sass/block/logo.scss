@@ -6,7 +6,6 @@
        padding-top: 0;
        padding-bottom: 0;
        margin-top: 0;
-      
     }
 }
 
@@ -59,7 +58,13 @@
 
 .logo__picture--first {
     @media (min-width: $tablet-width) {
-        display: none;
+        width: 174px;
+        height: 51px;
+    }
+
+    @media (min-width: $desktop-width) {
+        width: 202px;
+        height: 59px;
      }
 }
 
@@ -72,16 +77,18 @@
      }
 }
 
-.logo__picture--second {
-   margin-right: auto;
-   margin-left: auto;
+.logo__link-wrapper--second {
+    margin-right: auto;
+    margin-left: auto;
 
-   @media (min-width: $tablet-width) {
-    margin-right: 0;
-    margin-left: 0;
+    @media (min-width: $tablet-width) {
+        display: none;
+     }
+}
+
+.logo__picture--second {
    
- }
-   
+  
 }
 
 

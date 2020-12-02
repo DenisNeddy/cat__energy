@@ -34,10 +34,8 @@
     @media (min-width: $tablet-width) {
         display: flex;
         flex-wrap: wrap;
-        margin-top: 10px;
-        
+        margin-top: 10px;    
     }
-
 }
 
 .site-nav__item {
@@ -52,6 +50,9 @@
             margin-right: 0;
         }
     }
+    @media (min-width: $desktop-width) {
+        margin-right: 33px;
+    }
 }
 
 .site-nav__item--current {
@@ -59,6 +60,10 @@
 
     @media (min-width: $tablet-width) {
         border-bottom: 2px solid $basic-green;
+    }
+
+    @media (min-width: $desktop-width) {
+        border-bottom: 2px solid $basic-white;
     }
 }
 
@@ -83,6 +88,11 @@
         font-size: 18px;
         line-height: 24px;
         font-weight: 400;
+    }
+    @media (min-width: $desktop-width) {
+        font-size: 20px;
+        line-height: 30px;
+        color: $basic-white;
     }
 }
 

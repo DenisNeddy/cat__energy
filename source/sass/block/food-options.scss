@@ -2,6 +2,9 @@
     @media (min-width: $tablet-width) {
         margin-top: 17px;
     }
+    @media (min-width: $desktop-width) {
+        margin-top: 82px;
+    }
 }
 
 .food-options__list {
@@ -9,6 +12,11 @@
     padding: 0;
 
     list-style: none;
+
+    @media (min-width: $desktop-width) {
+       display: flex;
+       flex-wrap: wrap;
+    }
 }
 
 .food-options__item {
@@ -24,7 +32,18 @@
         padding-right: 0;
         padding-bottom: 53px; 
     }
+
+    @media (min-width: $desktop-width) {
+        width: calc(50% - 40px);
+        box-sizing: border-box;
+    }
 }
+
+.food-options__item:nth-child(even) {
+    @media (min-width: $desktop-width) {
+       margin-left: auto;
+    }
+} 
 
 .food-options__title {
     padding-top: 30px;
@@ -41,13 +60,17 @@
     @media (min-width: $tablet-width) {
         margin: 0;
         padding-top: 77px;
+
         font-size: 36px;
         line-height: 36px;
         padding-left: 0;
         max-width: 380px;
-        
+    }
+    @media (min-width: $desktop-width) {
+        padding-left: 160px;
 
-        background-color: tomato;
+        max-width: 100%;
+
     }
 }
 
@@ -68,13 +91,19 @@
         text-align: left;
 
         border-bottom: none;
-        background-color: tomato;
 
         &:nth-child(2) {
             max-width: 342px;
+
+            @media (min-width: $desktop-width) {
+                max-width: 467px;     
+            }
         }
+    }
 
-
+    @media (min-width: $desktop-width) { 
+        margin-top: 75px;
+        max-width: 467px;
     }
 }
 
@@ -95,5 +124,9 @@
         font-size: 20px;
         line-height: 30px;
         font-weight: 400;
+    }
+
+    @media (min-width: $tablet-width) {
+        margin-top: 10px;
     }
 }

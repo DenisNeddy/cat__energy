@@ -64,6 +64,16 @@
     background-color: $basic-green;
     background-image: url(../img/gift_photo_mobile.png);
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+        margin-bottom: 78px;
+        margin-top: 67px;
+        min-height: 195px;
+        max-height: 200px;
+
+        background-image: url(../img/gift_photo_tablet.png);
+   
+    }
 }
 
 .catalog__gift-description {
@@ -76,5 +86,12 @@
     color: $basic-white;
 
     text-align: center;
+
+    @media (min-width: $tablet-width) {
+        margin: 0;
+        margin-top: 72px;
+        margin-left: 423px;
+        text-align: left;
+    }
 }
 

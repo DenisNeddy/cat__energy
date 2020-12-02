@@ -3,6 +3,23 @@
     padding-bottom: 9px;
 
     border-top: 1px solid $special-grey-2;
+
+    @media (min-width: $tablet-width) {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+
+        padding-top: 0;
+        padding-bottom: 0;
+
+        padding-left: 38px;
+        padding-right: 38px;
+
+        
+        border-top: none;
+        border-bottom: 1px solid $special-grey-2;
+
+    }
 }
 .card-additional-good__title {
     margin: 0;
@@ -13,23 +30,53 @@
     text-transform: uppercase;
 
     color: $special-dark-grey-2;
+
+    
+    @media (min-width: $tablet-width) {
+        margin: 0;
+        margin-top: 25px;
+        min-width: 50%;
+        font-size: 20px;
+        line-height: 24px;
+    }
 }
 
 .card-additional-good__data-wrapper {
     display: flex;
     justify-content: space-between;
     margin-top: 11px;
-    
+
+    @media (min-width: $tablet-width) {
+        justify-content: flex-end;
+      
+      min-width: 50%;
+    } 
 
 }
 
 .card-additional-good__description {
     margin: 0;   
+
+    @media (min-width: $tablet-width) {
+       font-size: 16px;
+       line-height: 20px;
+    } 
+
 }
 
 .card-additional-good__price {
     margin: 0;
     text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+       min-width: 96px;
+       text-align: right;
+
+       font-size: 16px;
+       line-height: 20px;
+      
+    } 
+
 }
 
 .card-additional-good__button {
@@ -37,4 +84,12 @@
     margin-top: 13px;
     padding-top: 8px;
     padding-bottom: 8px;
+    
+    @media (min-width: $tablet-width) {
+        font-size: 16px;
+        margin-top: 19px;
+        margin-bottom: 28px;
+        width: 100%;
+    }
+      
 }
