@@ -25,9 +25,7 @@
         font-size: 60px;
         line-height: 60px;
     }
-    @media (min-width: $desktop-width) {
-        margin-top: 68px;
-    }   
+    
 }
 
 .form-page__description {
@@ -37,23 +35,22 @@
 
     max-width: 228px;
     
+
     font-size: 14px;
     line-height: 18px;
     
     font-family: "Oswald", "Arial", sans-serif;
     font-weight: 400;
     text-transform: uppercase;
-   
+
+    
     @media (min-width: $tablet-width) {
         margin-top: 53px;
         margin-left: 40px;
         max-width: 326px;;
         font-size: 20px;
         line-height: 30px;
+       
     }
-
-    @media (min-width: $desktop-width) {
-        margin-top: 59px;
-        margin-left: 0;
-    }
+    
 }
