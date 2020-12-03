@@ -3,14 +3,23 @@
     margin: 0;
     padding: 0;
     padding-top: 10px;
-    list-style: none;
 
+    list-style: none;
     
     @media (min-width: $tablet-width) {
         display: flex;
         flex-wrap: wrap;
-        max-width: 768px;
 
+        padding-top: 12px;
+
+        max-width: 768px;
+    }
+
+     
+    @media (min-width: $tablet-width) {
+        margin-top: 45px;
+
+        max-width: 1440px;
     }
 }
 
@@ -21,6 +30,7 @@
         content: "";
         display: block;
         position: absolute;
+
         top: 0;
         left: -300px;
 
@@ -31,46 +41,92 @@
 
         @media (min-width: $tablet-width) {
             display: none;
-      
         }
     }
-
 }
 
-.catalog__item {
-    
+.catalog__item {   
     @media (min-width: $tablet-width) {
+      margin-bottom: 23px;
       
       max-width: 324px;
-      background-image: linear-gradient(tomato 25%, red 25%);
+
+      background-image: linear-gradient($basic-white 22%, #f2f2f2 22%);
+      
       &:nth-child(even) {
           margin-left: 60px;
       }
+    }
 
+    @media (min-width: $desktop-width) {
+        margin-right: 80px;
+        margin-bottom: 25px;
+
+        &:nth-child(4n + 4) {
+            margin-right: 0;  
+        }
+
+        &:nth-child(even) {
+            margin-left: 0;
+        }
     }
 }
 
 .catalog__gift {
     margin-top: 50px;
     margin-bottom: 35px;
+
+    padding-top: 1px;
+
     min-width: 280px;
     min-height: 289px;
-    padding-top: 1px;
     
     background-color: $basic-green;
     background-image: url(../img/gift_photo_mobile.png);
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+        margin-bottom: 78px;
+        margin-top: 67px;
+
+        min-height: 195px;
+        max-height: 200px;
+
+        background-image: url(../img/gift_photo_tablet.png);
+    }
+
+    @media (min-width: $desktop-width) {
+        margin: 0;
+        margin-top: 66px;
+        margin-left: auto;
+
+        min-width: auto;
+        max-width: 245px;
+        min-height: auto;
+        max-height: 289px;
+
+        background-image: url(../img/gift_photo_desktop.jpg);
+    }
 }
 
 .catalog__gift-description {
-    max-width: 161px;
     margin: 0 auto;
     margin-top: 182px;
+
+    max-width: 161px;
 
     font-size: 16px;
     line-height: 20px;
     color: $basic-white;
 
     text-align: center;
+
+    @media (min-width: $tablet-width) {
+        margin: 0;
+        margin-top: 72px;
+        margin-left: 423px;
+        
+        text-align: left;
+    }
 }
 

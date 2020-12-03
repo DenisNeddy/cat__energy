@@ -1,18 +1,40 @@
+
 .pagination {
+    background-image: none;
+
+    @media (min-width: $desktop-width) {
+        width: 245px;    
+    }
+}
+
+.pagination__item {
     padding-bottom: 25px;
 
     text-align: center;    
 
     @media (min-width: $tablet-width) {
-        display: flex;
-        padding-top: 0;
-        padding-bottom: 0;
+        
+        padding-top: 1px;
+        padding-left: 38px;
+        padding-right: 38px;
+        padding-bottom: 38px;
+        margin-top: 120px;
         margin-bottom: 0;
+
         min-width: auto;
         width: 324px;
+        max-height: 430px;
 
-        border: 2px solid black;
-   }
+        box-shadow: 
+        inset 2px 2px 0 1px $basic-grey,
+        inset -2px -2px 0 1px $basic-grey;
+
+        box-sizing: border-box;
+    }
+
+    @media (min-width: $desktop-width) {
+        width: 245px;    
+    }
 }
 
 .pagination__title {
@@ -25,6 +47,19 @@
     font-weight: 400;
     text-transform: uppercase;
     color: $basic-black;
+
+    
+    @media (min-width: $tablet-width) {
+        margin: 0 auto;
+        margin-top: 83px;
+
+        font-size: 20px;
+        line-height: 22px;
+
+        max-width: 134px;
+        text-align: center;
+
+    }
 }
 
 .pagination__description {
@@ -34,6 +69,19 @@
     font-size: 12px;
     line-height: 16px;
     color: $special-dark-grey-1;
+
+    
+    @media (min-width: $tablet-width) {
+        margin: 0 auto;
+        margin-top: 24px;
+
+        max-width: 168px;
+
+        font-size: 16px;
+        line-height: 18px;
+
+        color: $special-dark-grey-1;
+    }
 }
 
 .pagination__button {
@@ -48,7 +96,7 @@
     font-size: 16px;
     line-height: 18px;
     font-family: "Oswald", "Arial", sans-serif;
-    font-weight: 400px;
+    font-weight: 400;
     text-transform: uppercase;
     color: $special-dark-grey-1;
     
@@ -56,4 +104,8 @@
 
     cursor: pointer;
 
+    
+    @media (min-width: $tablet-width) {
+        margin-top: 87px;
+    }
 }
