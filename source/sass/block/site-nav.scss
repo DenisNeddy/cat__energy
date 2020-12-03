@@ -61,7 +61,9 @@
     @media (min-width: $tablet-width) {
         border-bottom: 2px solid $basic-green;
     }
+}
 
+.site-nav__list--desktop .site-nav__item--current {
     @media (min-width: $desktop-width) {
         border-bottom: 2px solid $basic-white;
     }
@@ -89,6 +91,14 @@
         line-height: 24px;
         font-weight: 400;
     }
+
+    @media (min-width: $tablet-width) {
+        font-size: 20px;
+    }
+    
+}
+
+.site-nav__list--desktop .site-nav__item-link {
     @media (min-width: $desktop-width) {
         font-size: 20px;
         line-height: 30px;

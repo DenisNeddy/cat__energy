@@ -1,6 +1,10 @@
 
 .pagination {
     background-image: none;
+
+    @media (min-width: $desktop-width) {
+        width: 245px;    
+    }
 }
 
 .pagination__item {
@@ -16,14 +20,20 @@
         padding-bottom: 38px;
         margin-top: 120px;
         margin-bottom: 0;
+
         min-width: auto;
         width: 324px;
         max-height: 430px;
+
         box-shadow: 
         inset 2px 2px 0 1px $basic-grey,
         inset -2px -2px 0 1px $basic-grey;
 
         box-sizing: border-box;
+    }
+
+    @media (min-width: $desktop-width) {
+        width: 245px;    
     }
 }
 
@@ -98,5 +108,4 @@
     @media (min-width: $tablet-width) {
         margin-top: 87px;
     }
-
 }

@@ -15,6 +15,7 @@
 
     @media (min-width: $desktop-width) {
         position: relative;
+        
 
         background-color: transparent;
         &::before {
@@ -22,7 +23,7 @@
             display: block;
             position: absolute;
             top: -118px;
-            left: 720px;
+            left: 50%;
             width: 100%;
             height: 696px;
     
@@ -38,14 +39,14 @@
     @media (min-width: $tablet-width) {
         position: relative;
         margin-top: 31px;
-        padding-left: 82px;
+        padding-left: 81px;
 
         min-height: 820px;
     }
     
     @media (min-width: $desktop-width) {
         margin-top: 0;
-        padding-top: 78px;
+        padding-top: 79px;
         min-height: 500px;
     }
 }
