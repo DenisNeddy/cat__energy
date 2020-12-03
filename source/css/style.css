@@ -106,7 +106,8 @@ img {
       width: auto;
       margin: 0;
       padding-left: 0;
-      padding-right: 0; } }
+      padding-right: 0;
+      background-color: plum; } }
 
 .logo__link {
   display: flex;
