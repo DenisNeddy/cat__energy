@@ -24,6 +24,7 @@
         margin: 0 ;
         padding-left: 0;
         padding-right: 0;
+        background-color: plum;
     }
 }
 
@@ -53,6 +54,8 @@
         padding-left: 0;
         margin-left: 0;
         margin-right: 0;
+
+
     }
 }
 
@@ -81,7 +84,7 @@
     @media (min-width: $tablet-width) {
         display: block;
         margin-right: 12px;
-     }
+    }
 }
 
 .logo__link-wrapper--second {
