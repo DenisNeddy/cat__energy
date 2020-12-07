@@ -266,6 +266,7 @@
     margin-left: 5px;
 
     @media (min-width: $tablet-width) {
+        min-height: 36px;
         margin-top: 10px;
         margin-left: 0;
     }
@@ -285,6 +286,8 @@
     @media (min-width: $tablet-width) {
         font-size: 20px;
         line-height: 30px;
+
+        border-bottom: 1px dotted $black-border-opacity04;
     }
 }
 
@@ -311,6 +314,21 @@
     }
 }
 
+.example__toggle:hover  .example__toggle-text,
+.example__toggle:focus  .example__toggle-text {
+    @media (min-width: $tablet-width) {
+
+        border-bottom: 1px solid $black-border-opacity04;
+    }
+}
+
+.example__toggle:active  .example__toggle-text {
+    @media (min-width: $tablet-width) {
+
+        border-bottom: none;
+    }
+}
+
 
 .example__toggle-button {
     margin-left: 8px;
@@ -328,5 +346,15 @@
         border: 13px solid $basic-white;
         border-radius: 50%;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16);
+
+        &:hover,
+        &:focus {
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.19);
+        }
+
+        &:active {  
+            box-shadow:  0 0 0 2px $basic-green,
+            0px 3px 5px rgba(0, 0, 0, 0.2);
+        }
     }
 }

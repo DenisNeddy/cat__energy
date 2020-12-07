@@ -117,10 +117,10 @@
 .promo__image {
     @media (min-width: $tablet-width) {
         position: absolute;  
-        top: 229px;
-        left: 80px;
+        top: 228px;
+        left: 0px;
 
-        width: 627px;
+        width: 709px;
 
         z-index: 9;
     }
@@ -132,8 +132,6 @@
         width: 552px;
         height: 499px;
     }
-
-
 }
 
 .promo__button {
@@ -142,6 +140,15 @@
 
     padding-top: 10px;
     padding-bottom: 10px;
+
+    &:hover,
+    &:focus {
+        background-color: $basic-green-1;
+    }    
+    &:active {
+        background-color: $basic-green-1;
+        color: $white-font-opacity03;
+    }
 
     @media (min-width: $tablet-width) {
         position: relative;
@@ -155,8 +162,6 @@
         
         vertical-align: middle;
 
-    
         z-index: 10;
-    
     }
 }

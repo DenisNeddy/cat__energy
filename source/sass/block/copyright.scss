@@ -8,10 +8,29 @@
 
     @media (min-width: $tablet-width) {
        padding-top: 20px;
-       width: 190px;
-       
+       width: 190px;      
     }
 }
+
+.copyright__logo svg {
+    fill: $special-grey-3;
+    cursor: pointer;
+}
+
+.copyright:hover svg,
+.copyright:focus svg {
+   fill: $basic-green; 
+}
+
+.copyright:active svg {
+    fill: $basic-green;
+    opacity: 0.3;
+}
+
+.copyright:active .copyright__link {
+   opacity: 0.3;
+}
+
 
 .copyright__link {
     order: -1;
