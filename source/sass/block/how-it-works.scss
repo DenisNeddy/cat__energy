@@ -43,15 +43,48 @@
     min-height: 60px;
 
     @media (min-width: $tablet-width) {
+        position: relative;
         width: 45%;
         padding-bottom: 113px;
 
         &:nth-child(even) {  
             margin-left: 65px;
         }
+        &:before {
+            content: "1";
+            display: block;
+            position: absolute; 
+            top: 96px;
+            right: 88px;
+            font-size: 280px;
+            font-family: "Oswald", "Arial", sans-serif;
+            color: $basic-grey;         
+        }
+
+        &--second {
+            &:before {
+               content: "2";
+               right: 73px;
+            }
+        }
+
+        &--third {
+            &:before {
+               content: "3";
+               right: 73px;
+            }
+        }
+
+        &--fourth {
+            &:before {
+               content: "4";
+               right: 73px;
+            }
+        }
     }
     
     @media (min-width: $desktop-width) {
+       
         width: calc(25% - 60px);
         padding-bottom: 0;
         margin-right: auto;
@@ -89,10 +122,16 @@
         min-height: 60px;
 
         background-color: $basic-green;
+        background-image: url("../img/icon_leaf.svg");
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: 32px 30px;
 
         @media (min-width: $tablet-width) {
+            
             width: 80px;
             height: 80px;   
+            
         }
     }
 
@@ -100,11 +139,38 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        position: relative;
 
         max-width: 247px;
         min-height: 185px;
 
         font-size: 16px;
         line-height: 24px;
+
+        z-index: 10;
     }   
 }
+
+.how-it-works__item--second .how-it-works__description {
+    &:before {
+        background-image: url("../img/icon_tub.svg");
+        background-size: 29px 31px;
+    }
+}
+
+.how-it-works__item--third .how-it-works__description {
+    &:before {
+        background-image: url("../img/icon_eat.svg");
+        background-size: 25px 30px;
+    }
+}
+
+.how-it-works__item--fourth .how-it-works__description {
+    &:before {
+        background-image: url("../img/icon_alarm.svg");
+        background-size: 32px 33px;
+    }
+}
+
+
+
