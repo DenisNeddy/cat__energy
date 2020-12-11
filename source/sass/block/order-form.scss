@@ -48,20 +48,7 @@
 .order-form__fieldset--data {
     position: relative;
     
-    &::before {
-        content: "";
-        display: block;
-        position: absolute;
-        bottom: 0;
-        left: -50%;
-        width: 200%;
-        height: 1px;
-        background-color:  $border-grey-d9;
-
-        @media (min-width: $tablet-width) {
-            display: none;
-        }
-    }
+   
 
     @media (min-width: $tablet-width) {
         margin-top: 30px;
@@ -78,20 +65,7 @@
     margin-top: 50px;
     
 
-    &::before {
-        content: "";
-        display: block;
-        position: absolute;
-        bottom: 0;
-        left: -50%;
-        width: 200%;
-        height: 1px;
-        background-color:  $border-grey-d9;
-
-        @media (min-width: $tablet-width) {
-            display: none;
-        }
-    }
+    
 
     @media (min-width: $tablet-width) {
         margin-top: 50px;
@@ -337,7 +311,7 @@
         margin-top: 14px;
 
         height: 2px;
-        width:120%;
+        widows: 100%;
         
         background-color: $basic-green;   
         
@@ -383,7 +357,48 @@
     
     @media (min-width: $desktop-width) {
         left: 71px;
+        top: -22px;
      }
+}
+
+
+.order-form__input--tel:focus + .order-form__input-icon--tel > svg {
+    fill: #5EAA2F;
+}
+
+.order-form__input--email:focus + .order-form__input-icon--email > svg {
+    stroke: #5EAA2F;
+}
+
+.order-form__input--error  {
+    border: 1px solid $status-error;
+}
+
+.order-form__input--error + .order-form__input-icon > svg {
+    stroke: $status-error;
+}
+
+.order-form__input-icon {
+    position: absolute;
+    top: 14px;
+    right: 8px;
+}
+
+.order-form__input-icon--email {
+   
+    top: 16px;
+    right: 10px;
+}
+
+
+.order-form__input-icon--email svg {
+    stroke: $basic-black;
+    top: 3px;
+    
+}
+
+.order-form__input-icon--tel svg {
+    fill: $basic-black;
 }
 
 .order-form__contacts-wrapper {
@@ -403,7 +418,14 @@
 
 
 .order-form__contacts-wrapper .order-form__group {
+    position: relative;
+    &:first-child {
+        margin-bottom: 10px;
 
+        @media (min-width: $tablet-width) {
+            margin-bottom: 0;  
+        } 
+    }
     
     @media (min-width: $tablet-width) {
         margin-left: 38px;  
@@ -417,6 +439,16 @@
        } 
     } 
 }
+
+
+.order-form__subtitle-container {
+    @media(min-width: $desktop-width) {
+        position: relative;
+        width: 1440px;
+        margin: 0 auto;
+    }
+}
+
 
 
 .order-form__subtitle-wrapper--textarea {

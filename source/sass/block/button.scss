@@ -13,6 +13,16 @@
     
     cursor: pointer;
 
+    &:hover,
+    &:focus {
+        background-color: $basic-green-1;
+    }
+
+    &:active {
+        background-color: $basic-green-1;
+        color: $white-font-opacity03;
+    }
+
     @media (min-width: $tablet-width) {
         font-size: 20px;
         line-height: 24px;

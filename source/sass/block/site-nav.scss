@@ -6,6 +6,73 @@
     }
 }
 
+.site-nav__nav--js .site-nav__list {
+    display: block;
+}
+
+.site-nav__nav--js .site-nav__button {
+    display: none;
+
+}
+
+.site-nav__nav--closed .site-nav__button {
+    display: block;
+    &::before {
+        content: "";
+        display: block;
+        width: 24px;
+        height: 1.5px;
+        background-color: $basic-black;
+        box-shadow:  0 8px 0 0 $basic-black,
+                    0 16px 0 0 $basic-black;
+        transform: translate(-7px,-7px);
+    }  
+    
+    @media (min-width: $tablet-width) {
+        display: none;
+    }
+}
+
+
+.site-nav__nav--closed .site-nav__list {
+        display: none;
+
+        @media (min-width: $tablet-width) {
+            display: flex;
+        }
+}
+
+
+.site-nav__nav--opened .site-nav__button {
+    display: block;
+    
+    &::before {
+        content: "";
+        display: block;
+
+        height: 2px;
+        width: 25px;
+        background-color: $basic-black;
+        border-radius: 5px;
+        transform: rotate(45deg) translate(-5px, 5px);
+    }
+
+    &::after {
+        content: "";
+        display: block;
+
+        height: 2px;
+        width: 25px;
+        background-color: $basic-black;
+        border-radius: 5px;
+        transform: rotate(-45deg) translate(-4px, -6px);
+    }
+
+    @media (min-width: $tablet-width) {
+        display: none;
+    }
+}
+
 .site-nav__button {
     position: absolute;
     top: -50px;
@@ -18,53 +85,15 @@
 
     cursor: pointer;
     
-    &--opened {
-        display: none;    
-     
-        &::before {
-            content: "";
-            display: block;
-            width: 24px;
-            height: 1.5px;
-            background-color: $basic-black;
-            box-shadow:  0 8px 0 0 $basic-black,
-                        0 16px 0 0 $basic-black;
-            transform: translate(-7px,-7px);
-        }   
-    }
-
-    &--closed {
-        display: block;
-        &::before {
-            content: "";
-            display: block;
-  
-            height: 2px;
-            width: 25px;
-            background-color: $basic-black;
-            border-radius: 5px;
-            transform: rotate(45deg) translate(-5px, 5px);
-        }
-
-        &::after {
-            content: "";
-            display: block;
-  
-            height: 2px;
-            width: 25px;
-            background-color: $basic-black;
-            border-radius: 5px;
-            transform: rotate(-45deg) translate(-4px, -6px);
-        }
-
-    }
 
     @media (min-width: $tablet-width) {
         display: none;
     }
 }
 
+
 .site-nav__list {
+    display: none;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -75,6 +104,7 @@
         margin-top: 10px;    
     }
 }
+
 
 .site-nav__item {
     text-align: center;

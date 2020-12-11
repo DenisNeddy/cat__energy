@@ -9,6 +9,8 @@
     @media (min-width: $tablet-width) {
         display: flex;
         flex-wrap: wrap;
+        width: 768px;
+       // margin: 0 auto;
 
         padding-top: 12px;
 
@@ -16,7 +18,7 @@
     }
 
      
-    @media (min-width: $tablet-width) {
+    @media (min-width: $desktop-width) {
         margin-top: 45px;
 
         max-width: 1440px;
@@ -35,12 +37,13 @@
         left: -300px;
 
         height: 1px;
-        width: 300%;
+        //width: 300%;
 
         background-color:  $special-grey-1;
 
         @media (min-width: $tablet-width) {
             display: none;
+            width: auto;
         }
     }
 }
